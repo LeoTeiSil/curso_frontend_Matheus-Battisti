@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div>
+        <form action="" method="get">
+            <label for=""> Nome: <input type="text" placeholder="nome" /></label>
+            <label for="idade">Idade: <input type="text" name="idade" placeholder="Idade" /></label>
+            <label for="senha">Senha: <input type="password" name="senha" placeholder="senha"></label>
+
+            <label for="trabalho">Selecione sua profissão:</label>
+            <select name="profissão">
+                <option value="programador">programador</option>
+                <option value="engenheiro">engenheiro</option>
+                <option value="Analista de dados">Analista de dados</option>
+
+                <label for="contrato">Termos do contrato</label>
+                <select name="cintrato">
+                    <option value="sim">Sim</option>
+                    <option value="nao" selected>Não</option>
+                </select>
+
+                <label for="itens">Selecione os itens</label>
+                <select name="frutas" multiple>
+                    <option value="Abacaxi">Abacaxi</option>
+                    <option value="Banana ">Banana</option>
+                    <option value="Maçã">Maçã</option>
+                    <option value="Uva">Uva</option>
+                    <option value="Melancia">Melancia</option>
+                </select>
+
+                <fieldset>
+                    <legend>Preencha suas informações</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text">
+                </fieldset>
+
+                <label for="sabor">Escolha o sabor</label>
+                <input type="text" list="sabores" name="sabor">
+
+                <datalist id="sabores">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="creme">Creme / Baunilha</option>
+                    <option value="morango">Morango</option>
+                    <option value="flocos">Flocos</option>
+                    <option value="coco">Coco</option>
+                    <option value="pistache">Pistache</option>
+                </datalist>
+
+                <label for="comentari">Comentário sobre o forms</label>
+                <textarea name="comentario" placeholder="Digite aqui"></textarea>
+
+                <div class="carros">
+                    <label class="titulo">Escolha o carro</label>
+
+                    <label>
+                        <input type="radio" value="BMW" name="carro">
+                        BMW
+                    </label>
+
+                    <label>
+                        <input type="radio" value="AUDI" name="carro">
+                        AUDI
+                    </label>
+
+                    <label>
+                        <input type="radio" value="PORSCHE" name="carro">
+                        PORSCHE
+                    </label>
+
+                    <label>
+                        <input type="radio" value="MERCEDES" name="carro">
+                        MERCEDES
+                    </label>
+                </div>
+
+                <label for="optionals">Opcionais do carro:</label>
+                <div class="radio">
+                    <input type="checkbox" name="optionals[]" value="pneus">
+                    <label for="pneus">Pneus Grandes</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="optionals[]" value="turbo">
+                    <label for="turbo">Motor Turbo</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="optionals[]" value="hibrido">
+                    <label for="hibrido">Híbrido</label>
+                </div>
+
+                <label for="data">Escolha a sua data de nascimento
+                    <input type="date" name="data">
+                </label>
+
+                <label for="image">Insira a sua imagem: 
+                    <input type="file" name="image">
+                </label>
+
+                <label for="salario">Salario arual: <input type="number" name="salario"></label>
+
+                <label for="email">Seu email: <input type="email" name="email" required></label>
+
+                <label for="valor">Digite algum valor: <input type="text" value="meu valor é esse"></label>
+
+                <label for="disable">Tente muda o valor <input type="text" disabled></label>
+
+                <input type="reset" value="resetar">
+
+                <input type="submit" value="Enviar" />
+        </form>
+    </div>
+</body>
+
+</html>

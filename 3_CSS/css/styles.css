@@ -1,0 +1,183 @@
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color: pink;
+    font-size: 50px;
+}
+
+/* para fazer o css de classes colocar apenas o . (ponto) e nome da classe */
+.paragrafo{
+    color: aqua;
+    background-color: black;
+    font-size: 30px;
+}
+
+/* para fazer o css de IDs colocar apenas o # e nome do ID */
+#tituloid{
+    background-color: violet;
+    font-size: 25;
+    border: 3px solid yellow;
+    border-radius: 25px;
+     text-align: center;/*deixando o texto no meio */
+}
+
+/* cores */
+.cornome{
+    color: blue;
+    font-size: 50px;
+}
+
+.corhexa{
+    color: #392399;
+    font-size: 50px;
+}
+
+.hexasimple{
+    color: #123;
+    font-size: 50px;
+}
+
+.corrgb{
+    color: rgb(255,0,0);
+    font-size: 50px;
+}
+
+/* deixar mais transparente */
+.rgba{
+    color: rgb(42, 29, 213, 0.9);
+    font-size: 50px;
+}
+
+.hsl{
+    color: hsl(150, 20%, 50%);
+    font-size: 50px;
+}
+.imgh2{
+    font-size: 60px;
+    color: #fff ;
+    background-image: url(../img/nature.jpg);
+    /* centralizar imagem
+    background-position: center;
+    background-size: cover; */
+}
+
+/* box-model */
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #242f5b;
+    border-radius: 7px;
+    width: 280px;
+    height: 100px;
+}
+
+/* static */
+.static {
+  position: static;
+  background-color: #391;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+}
+
+/* Relative */
+.relative {
+  position: relative;
+  background-color: #224;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 40px;
+}
+
+/* Absolute */
+.absolute {
+  position: absolute;
+  background-color: #964;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  right: 2px;
+}
+
+/* Absolute e relative */
+.relative-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin-top: 120px;
+  position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+  width: 50px;
+  height: 50px;
+  background-color: #422;
+  position: absolute;
+}
+
+.absolute-1 {
+  top: 10px;
+  left: 10px;
+}
+
+.absolute-2 {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Fixed */
+.fixed {
+  width: 100px;
+  height: 100px;
+  background-color: #851;
+  border: 1px solid blue;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+}
+
+/* sticky */
+.sticky {
+  width: 100px;
+  height: 100px;
+  background-color: #994;
+  border: 1px solid green;
+  position: sticky;
+  top: 10px;
+}
+
+/* z index */
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+  width: 50px;
+  height: 50px;
+  background-color: #123;
+  position: absolute;
+}
+
+.absolute-3 {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.absolute-4 {
+  top: 10px;
+  left: 10px;
+  background-color: #246;
+  z-index: 20;
+}
+
+.absolute-5 {
+  top: 40px;
+  left: 40px;
+  background-color: #453;
+  z-index: 1;
+}
