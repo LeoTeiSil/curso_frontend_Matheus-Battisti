@@ -1,0 +1,28 @@
+/* Independente do tamanho de tela */
+h1{
+    color: red;
+}
+
+/* Cor em um largugura maxima (dpois que passa dela muda) */
+@media screen and (max-width: 500px) {
+    h1{
+        color: blue;
+    }
+    
+}
+
+/* Cor em largura minima (depois que é menor que ela muda) */
+@media screen and (min-width: 800px) {
+    h1{
+        color: blueviolet;
+    }
+}
+
+h3{
+    display: none;
+}
+@media screen and (orientation: landscape){
+    h3{
+    display: block;
+}
+}
